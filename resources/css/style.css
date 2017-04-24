@@ -1,0 +1,66 @@
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 95%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  z-index: 20;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo h1 {
+  display: inline;
+  text-transform: uppercase;
+  margin-left: 0px;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  color: black;
+}
+
+header .logo h1:last-child {
+  color: gray;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 16px;
+}
+
+.banner {
+  background-color: lightgray;
+  margin-top: 4rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+}
+
+.banner-caption {
+  margin-left: 2.5rem;
+}
+
+.banner a {
+  display: block;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .5rem 0;
+}
