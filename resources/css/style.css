@@ -1,12 +1,13 @@
 /*UNIVERSAL STYLES*/
 html {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   color: #3a3a3a;
 }
 
 h2 {
   font-size: 2rem;
+  color: #2f768c;
 }
 
 h3 {
@@ -23,6 +24,11 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
+  color: #2f768c;
+}
+
+nav {
+  color: #FF8023;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -149,12 +155,17 @@ nav.mobile ul li {
 
 .banner a {
   display: block;
-  background-color: #3a3a3a;
+  background-color: #FF8023;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   padding: .5rem 0;
   width: 90%;
+}
+
+.banner a:hover {
+  background-color: #0BC9FF;
+  transition: background-color .75s ease-out 0s;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -230,8 +241,12 @@ nav.mobile ul li {
 
 .info a {
   font-size: .75rem;
-  color: #34a7f9;
+  color: #0BC9FF;
   text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
 }
 
 /*INFORMATION SECTION STYLES*/
@@ -248,16 +263,25 @@ nav.mobile ul li {
 }
 
 @media only screen and (max-width: 30rem) {
+  #information {
+    padding-bottom: 2rem;
+  }
+
   #information .column-left {
     display: none;
   }
 
   #information .column-right {
     width: 100%;
+    border: none;
   }
 
   #information .column-right div:nth-child(3n + 0) {
     background-color: #ffffff;
+  }
+
+  #information .detail {
+    border: none;
   }
 }
 
@@ -287,7 +311,6 @@ nav.mobile ul li {
 }
 
 .thesis .detail {
-
   border: none;
 }
 
@@ -323,6 +346,8 @@ nav.mobile ul li {
 .subjects {
   background-color: #d1d1d1;
   padding: 2rem;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
 }
 
 .subjects h2 {
@@ -343,6 +368,15 @@ nav.mobile ul li {
   background-color: #ffffff;
 }
 
+.course:hover {
+  height: auto;
+  width: 80%;
+  position: relative;
+  z-index: 15;
+  transition: height .25s linear .25s,
+              width .25s linear .25s;
+}
+
 .bottom {
   margin-top: 2rem;;
 }
@@ -359,6 +393,10 @@ nav.mobile ul li {
   margin-left: 1rem;
 }
 
+.title h3 {
+  color: #0BC9FF;
+}
+
 @media only screen and (max-width: 45rem) {
   .course {
     margin: 0 .25rem;
@@ -373,11 +411,23 @@ nav.mobile ul li {
 
   .subjects {
     background-color: #ffffff;
+
+  }
+
+  .subjects h2 {
+    margin-bottom: 1rem;
   }
 
   .title {
-    background-color: #d1d1d1;
+    background-color: #0BC9FF;
     width: 100%;
+  }
+
+  .title h3 {
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: .5rem;
+    padding: 0;
   }
 
   .container {
