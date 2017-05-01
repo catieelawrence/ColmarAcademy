@@ -14,7 +14,14 @@
         <h1>Colmar</h1>
         <h1>Academy</h1>
       </div>
-      <nav>
+      <nav class="mobile">
+        <ul>
+          <li><img src="resources/images/ic-on-campus.svg" alt="On campus"></li>
+          <li><img src="resources/images/ic-online.svg" alt="Online"></li>
+          <li><img src="resources/images/ic-login.svg" alt="Sign in"></li>
+        </ul>
+      </nav>
+      <nav class="desktop">
         <ul>
           <li>On campus</li>
           <li>Online</li>
@@ -24,6 +31,7 @@
       </nav>
     </header>
     <!--BANNER SECTION-->
+    <div class="mobile-img"></div>
     <div class="banner">
       <img class="left" src="resources/images/banner.jpg"
         alt="Image of students studying together at picnic table">
@@ -36,7 +44,7 @@
       </div>
     </div>
     <!--INFORMATION SECTION-->
-    <div class="container-columns">
+    <div class="container-columns" id="information">
       <div class="column-left">
         <img src="resources/images/information-main.jpg"
           alt="Image of student reading on campus">
@@ -189,7 +197,7 @@
       </div>
       <!--FOOTER SECTION-->
       <footer>
-        <p>Copyright 2016 Colmar Academy. All rights reserved.</p>
+        <p>&copy; 2016 Colmar Academy. All rights reserved.</p>
         <nav>
           <ul>
             <li>Terms</li>
